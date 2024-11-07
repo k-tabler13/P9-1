@@ -41,12 +41,17 @@ int main() {
         }
         cout << endl;
 
-        // Print all elements in reverse order
+        // Print all elements in reverse order.
         cout << "Array elements in reverse order:" << endl;
-        for (int i = SIZE - 1; i >= 0; --i) { 
+     for (int i = SIZE - 1; i >= 0; --i) { 
             cout << array[i] << " ";
         }
-        cout << endl;
+        cout << endl; 
+
+        // Print only the first and last element
+        cout << "First and last elements:" << endl;
+        cout << "First: " << array[0] << " Last: " << array[SIZE - 1] << endl;
+
 
     return 0;
 }
