@@ -10,19 +10,27 @@ int main() {
 
     
     const int SIZE = 10;
-    int arr[SIZE];
+    int array[SIZE];
 
-    // puts 4 digit random numbers into the array.
+    // puts 4 digit random numbers into the array
     for (int i = 0; i < SIZE; ++i) {
-        arr[i] = 1000 + std::rand() % 9000;  // Generate random number between 1000 and 9999
+        array[i] = 1000 + std::rand() % 9000;  // Generate random number between 1000 and 9999
     }
 
     // prints out the array
         cout << "Array elements in order of appearance:" << std::endl;
     for (int i = 0; i < SIZE; ++i) {
-        cout << arr[i] << " ";
+        cout << array[i] << " ";
     }
 
-        cout << endl; 
+        cout << endl;  
+
+     // Print every element.
+        cout << "Array elements at even indices:" << std::endl;
+     for (int i = 0; i < SIZE; i += 2) { 
+        cout << array[i] << " ";
+        }
+        cout << std::endl;
+
     return 0;
 }
