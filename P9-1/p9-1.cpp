@@ -18,7 +18,7 @@ int main() {
     }
 
     // prints out the array
-        cout << "Array elements in order of appearance:" << std::endl;
+        cout << "Array elements in order of appearance:" << endl;
     for (int i = 0; i < SIZE; ++i) {
         cout << array[i] << " ";
     }
@@ -26,11 +26,22 @@ int main() {
         cout << endl;  
 
      // Print every element.
-        cout << "Array elements at even indices:" << std::endl;
+        cout << "Array elements at even indices:" << endl;
      for (int i = 0; i < SIZE; i += 2) { 
         cout << array[i] << " ";
         }
-        cout << std::endl;
+        cout << endl;
+
+        // Print every even element
+        cout << "Even elements in the array:" << endl;
+     for (int i = 0; i < SIZE; ++i) {
+            if (array[i] % 2 == 0) { 
+                cout << array[i] << " ";
+            }
+        }
+        cout << endl;
+
+
 
     return 0;
 }
