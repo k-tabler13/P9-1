@@ -32,7 +32,7 @@ int main() {
         }
         cout << endl;
 
-        // Print every even element
+        // Print every even element.
         cout << "Even elements in the array:" << endl;
      for (int i = 0; i < SIZE; ++i) {
             if (array[i] % 2 == 0) { 
@@ -41,7 +41,12 @@ int main() {
         }
         cout << endl;
 
-
+        // Print all elements in reverse order
+        cout << "Array elements in reverse order:" << endl;
+        for (int i = SIZE - 1; i >= 0; --i) { 
+            cout << array[i] << " ";
+        }
+        cout << endl;
 
     return 0;
 }
