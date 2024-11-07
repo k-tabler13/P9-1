@@ -12,7 +12,7 @@ int main() {
     const int SIZE = 10;
     int array[SIZE];
 
-    // puts 4 digit random numbers into the array
+    // puts 4 digit random numbers into the array.
     for (int i = 0; i < SIZE; ++i) {
         array[i] = 1000 + std::rand() % 9000;  // Generate random number between 1000 and 9999
     }
